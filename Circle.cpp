@@ -12,3 +12,5 @@ Circle::Circle(double r, const char *sn) {
     this->setShape(sn, Point(0, 0));
     this->setRadius(r);
 }
+double Circle::getRadius() const { return this->m_radius; }
+void Circle::setRadius(double r) { this->m_radius = r; }
