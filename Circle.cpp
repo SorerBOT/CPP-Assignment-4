@@ -2,6 +2,7 @@
 // Created by sorer on 6/1/22.
 //
 
+#include "math.h"
 #include "Circle.h"
 
 Circle::Circle(const Circle &other) {
@@ -14,3 +15,4 @@ Circle::Circle(double r, const char *sn) {
 }
 double Circle::getRadius() const { return this->m_radius; }
 void Circle::setRadius(double r) { this->m_radius = r; }
+int Circle::calcArea() const { return (int) (M_PI * pow(this->getRadius(), 2)); }
